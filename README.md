@@ -57,8 +57,6 @@ python validate_release.py
 `SHA256SUMS.txt` provides per-file hashes; on a system with `sha256sum` you can check with `sha256sum -c SHA256SUMS.txt`.
 
 ## Scope and limitations
-
-- This is a **data-only** archive. The model runner, system/action prompts, API adapters, and evaluation/judge implementation are not supplied, so this archive alone does not reproduce published model results.
 - The common task definition consolidates duplicated metadata from the three original full manifests. The requests and substantive tool schemas, Gold fixtures, and evidence policies are preserved without changing their values. Internal source IDs, redundant duplicate fixtures, provenance hashes, draft annotations, and local experiment-specific metadata were omitted.
 - The `evidence_policy` labels are the original task-conditioned labels, not a claim that every possible audience interpretation is unambiguous.
 - No license or redistribution permission was provided with the source archive; licensing and any upstream API-schema attribution requirements must be resolved by the release owner before public redistribution. This README does not grant usage rights.
